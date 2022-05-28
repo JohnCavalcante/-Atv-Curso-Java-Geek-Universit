@@ -1,0 +1,29 @@
+/*Fazer um programa que leia o número de um funcionário, seu número de horas trabalhadas, o valor que recebe por
+hora e calcula o salário desse funcionário. A seguir, mostre o número e o salário do funcionário, com duas casas
+decimais.*/
+
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Ex4_Estrutura_sequencial {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner entrada = new Scanner(System.in);
+		
+		int numf; 
+		double horaT,valorH;
+		
+		numf = entrada.nextInt();
+		horaT = entrada.nextInt();
+		valorH = entrada.nextDouble();
+		
+		double salario = horaT * valorH;
+		
+		
+		System.out.println("NUMBER = "+ numf);
+		System.out.println("SALARY = U$ "+ salario );
+		
+	}
+}
