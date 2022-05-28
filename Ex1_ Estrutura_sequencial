@@ -1,0 +1,21 @@
+/*EX_1 Faça um programa para ler dois valores inteiros, e depois mostrar na tela a soma desses números com uma
+mensagem explicativa, conforme exemplos.*/
+
+package curso_programacao;
+
+import java.util.Scanner;
+
+public class Atv_estrutura_sequencial {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+	  int x = entrada.nextInt();
+	  int y = entrada.nextInt();
+	  int z = x + y;
+	  entrada.close();
+		
+	 System.out.println("soma = " + z);
+	}
+
+}
